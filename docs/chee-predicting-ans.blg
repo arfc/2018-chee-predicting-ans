@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: chee-predicting-ans.aux
+The style file: ans.bst
+Database file #1: bibliography.bib
+Warning--empty journal in iaea_current_nodate
+Warning--empty year in iaea_current_nodate
+You've used 17 entries,
+            2305 wiz_defined-function locations,
+            628 strings with 8193 characters,
+and the built_in function-call counts, 5354 in all, are:
+= -- 259
+> -- 188
+< -- 2
++ -- 71
+- -- 54
+* -- 444
+:= -- 565
+add.period$ -- 35
+call.type$ -- 17
+change.case$ -- 7
+chr.to.int$ -- 0
+cite$ -- 19
+duplicate$ -- 633
+empty$ -- 551
+format.name$ -- 63
+if$ -- 1093
+int.to.chr$ -- 0
+int.to.str$ -- 17
+missing$ -- 165
+newline$ -- 55
+num.names$ -- 17
+pop$ -- 262
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 55
+stack$ -- 0
+substring$ -- 121
+swap$ -- 464
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 26
+width$ -- 19
+write$ -- 147
+(There were 2 warnings)
