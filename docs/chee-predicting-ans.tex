@@ -15,6 +15,8 @@ gchee2@illinois.edu
 \usepackage{xspace}
 \usepackage{tabularx}
 \usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{placeins}
 \newcommand{\SN}{S$_N$}
 \renewcommand{\vec}[1]{\bm{#1}} %vector is bold italic
 \newcommand{\vd}{\bm{\cdot}} % slightly bold vector dot
@@ -72,7 +74,6 @@ closely replicate reality.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Methodology}
-\subsection{\textit{\Cyclus Simulation and Analysis}}
 A \Cyclus simulation of the United States nuclear fuel cycle was created using 
 published data of the 112 commerical nuclear reactors that have operated since 
 1967 in the United States. The reactor deployment data was obtained from the 
@@ -90,13 +91,12 @@ used in Python to render the data into an input file that is accepted by
 
 The assumptions made for this \Cyclus simulation include: 
 
-\begin{enumerate}
+\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 	\item Cycle time is assumed to be 18 months. 
 	\item Refueling time is assumed to be 1 month. 
 	\item There is isotopic decay. 
 \end{enumerate}
 
-\subsection{\textit{UDB Data Analysis}}
 The UDB database contains commercial SNF information from 1967 through 2013. 
 Data such as initial enrichment, burnup, mass of spent fuel and discharged 
 dates were collected from multiple sources \cite{peterson_additional_2017}. 
@@ -135,7 +135,7 @@ one month.
 \end{figure}
 
 The Nuclear Energy Institute (NEI) reported significant 
-variance in the refueling period for reactors in the United States. While average 
+variance in the refueling period for US reactors. While average 
 refuelling time in 1990 was 104 days, it decreased to an average 
 refuelling time of 35 days in 2017 \cite{iaea_current_nodate}.
 
@@ -207,19 +207,29 @@ $^{242}$Pu and $^{240}$Pu. They are similar for the isotopes on the left side
 of both figures. With an exception of $^{239}$Pu having a substantial larger 
 difference for 33 GWDt/MTU than 51 GWDt/MTU. 
 
-\begin{figure}[t] % replace 't' with 'b' to force it to be on the bottom
+\begin{figure*}[htb] % replace 't' with 'b' to force it to be on the bottom
 	\centering
-	\includegraphics[width=0.48\textwidth]{figures/absolute_diff_all_51}
-	\caption{The absolute difference between spent fuel mass from UDB data and \Cyclus data for each isotope for burnup of 51 GWDt/MTU (Positive difference means \Cyclus data is larger and negative difference means UDB data is larger).}
+        \begin{subfigure}{0.9\textwidth}
+        \includegraphics[height=0.30\textheight]{figures/absolute_diff_all_51}
+        \caption{51 GWD/MTU burnup.}
 	\label{fig:absolute_diff_all_51}
-\end{figure} 
-
-\begin{figure}[t] % replace 't' with 'b' to force it to be on the bottom
-	\centering
-	\includegraphics[width=0.48\textwidth]{figures/absolute_diff_all_33}
-	\caption{The absolute difference between spent fuel mass from UDB data and \Cyclus data for each isotope for burnup of 33 GWDt/MTU (Positive difference means \Cyclus data is larger and negative difference means UDB data is larger).}
+        \end{subfigure}
+        \begin{subfigure}{0.9\textwidth}
+        \includegraphics[height=0.30\textheight]{figures/absolute_diff_all_33}
+        \caption{33 GWD/MTU burnup.}
 	\label{fig:absolute_diff_all_33}
-\end{figure} 
+        \end{subfigure}
+        \begin{subfigure}{0.9\textwidth}
+        \includegraphics[height=0.35\textheight]{figures/absolute_diff_2000}
+        \caption{Both burnup states, year 2000 data.}
+	\label{fig:absolute_diff_2000}
+        \end{subfigure}
+        \caption{The absolute difference between spent fuel mass calculated by 
+        UDB and \Cyclus for each isotope. Positive difference indicates \Cyclus 
+        mass estimate is larger.}
+        \label{fig:absolute}
+\end{figure*} 
+\FloatBarrier
 
 The 
 cumulative spent fuel isotopic mass difference between UDB and \Cyclus data for 
@@ -237,12 +247,6 @@ contributors to each waste package. While, $^{238}$Pu, $^{244}$Cm, $^{90}$Sr
 and $^{137}$Cs are the most significant short term decay heat contributors 
 \cite{wigeland_separations_2006} to each waste package. 
 
-\begin{figure}[t] % replace 't' with 'b' to force it to be on the bottom
-	\centering
-	\includegraphics[width=0.48\textwidth]{figures/absolute_diff_2000}
-	\caption{The absolute difference between spent fuel mass from UDB data and \Cyclus data for each isotope at year 2000 for burnup of 33 GWd/MTU and 51 GWd/MTU (Positive difference means \Cyclus data is larger and negative difference means UDB data is larger).}
-	\label{fig:absolute_diff_2000}
-\end{figure} 
 
 In figure \ref{fig:absolute_diff_2000}, the \Cyclus simulation that uses the 33 
 GWDt/MTU burnup recipe has a small mass difference between UDB and \Cyclus data 
@@ -266,17 +270,10 @@ This work demonstrates that the spent fuel mass and isotopic composition
 calculated by the \Cyclus simulation of the United States nuclear fuel cycle 
 closely follow the results from real world metrics. This provides confidence 
 that \Cyclus can be used to produce accurate isotopic decay heat contributions and 
-simulate loading of a waste repository based on thermal constraints. However, 
-improvements can be made to more closely replicate reality.  
-
-Further work that would improve the simulation is to give the reactor agent the 
+simulate loading of a waste repository based on thermal constraints. 
+To more closely replicate reality, future work will give the reactor agent the 
 capability to accept varying cycle lengths, refueling durations and spent fuel 
-recipes. A \Cyclus simulation then can be made to replicate the historic U.S 
-nuclear fuel cycle even more closely by matching the cycle length, refueling 
-time and spent fuel recipes for specific reactors throughout their lifetimes. 
-This will give more accurate spent fuel mass and isotopic compositions which 
-will in turn make the \Cyclus simulations for loading of a waste repository 
-more accurate. 
+recipes.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Acknowledgments}
