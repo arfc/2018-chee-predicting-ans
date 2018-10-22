@@ -7,13 +7,13 @@
 \documentclass[9pt]{beamer}
 \usetheme[white]{Illinois}
 %\title[short title]{long title}
-\title[Short Title]{A Very Very Long Title for a Presentation about Cats}
+\title[Short Title]{Validation of Spent Nuclear Fuel Output by Cyclus, a Fuel Cycle Simulator Code}
 %\subtitle[short subtitle]{long subtitle}
-\subtitle[Short SubTitle]{Mostly Kittens}
+%\subtitle[Short SubTitle]{Mostly Kittens}
 %\author[short name]{long name}
-\author[Your Name]{Your Name\\Advanced Reactors and Fuel Cycles Group}
+\author[Your Name]{Gwendolyn J. Chee, Gyutae Park \& Kathryn D. Huff \\ Advanced Reactors and Fuel Cycles Group}
 %\date[short date]{long date}
-\date[04.01.2100]{April 1, 2100}
+\date[11.12.2018]{November 12, 2018}
 %\institution[short name]{long name}
 \institute[UIUC]{University of Illinois at Urbana-Champaign}
 
@@ -85,25 +85,34 @@
 \end{frame}
 }
 
+\section{Background}
+\subsection{Nuclear Waste Repository Model}
+\input{repo_model}
+\subsection{What is Cyclus?}
+\input{cyclus}
+
 \section{Motivation}
-\subsection{Cat Behavior}
-\input{cat_behavior}
-\subsection{Cat Appearance}
-\input{cat_appearance}
-\subsection{Cat Math}
-\input{cat_math}
-\section{Methods}
-\subsection{Illinois Colors}
-\input{fierce}
+\subsection{Cyclus Simulation of historic U.S. nuclear fuel cycle}
+\input{cyclus_sim}
+\subsection{Comparison of Cyclus Simulation against UDB database}
+\input{cyclus_vs_udb}
+\section{Results}
+\subsection{Cyclus vs. UDB: Total Spent Fuel Mass}
+\input{total_UNF}
+\subsection{Cyclus vs. UDB: Major Isotopic Composition of Total Spent Fuel Mass}
+\input{isotopic_UNF}
 \section{Conclusion}
+\subsection{Conclusion}
 \input{conclusion}
+\subsection{Future Work}
+\input{future_work}
 \input{acks}
 %%--------------------------------%%
 %%--------------------------------%%
 \begin{frame}[allowframebreaks]
   \frametitle{References}
   \bibliographystyle{plain}
-  {\footnotesize \bibliography{bibliography.bib} }
+  {\footnotesize \bibliography{../docs/bibliography.bib} }
 
 \end{frame}
 
