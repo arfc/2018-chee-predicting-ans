@@ -1,8 +1,4 @@
-# Presentation Templates
-
-For now, we have just a beamer template. 
-Add your own. 
-Improve at will. 
+# Presentation for ANS Winter 2018
 
 Use the makefile to build it. 
 
