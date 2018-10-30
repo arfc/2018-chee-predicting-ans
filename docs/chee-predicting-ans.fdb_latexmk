@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex chee-predicting-ans"] 1540154343 "chee-predicting-ans.aux" "chee-predicting-ans.bbl" "chee-predicting-ans" 1540154345
+["bibtex chee-predicting-ans"] 1540180001 "chee-predicting-ans.aux" "chee-predicting-ans.bbl" "chee-predicting-ans" 1540180003
   "./ans.bst" 1540147049 24828 f96cbdd73208e42b94aefb1e9fddd55d ""
   "bibliography.bib" 1540147089 19967 9d9a9c3c2ef8d37be65044f81781d763 ""
-  "chee-predicting-ans.aux" 1540154345 4300 0889a9ed5368dc3cfeb37843532997ea ""
+  "chee-predicting-ans.aux" 1540180003 4300 0889a9ed5368dc3cfeb37843532997ea ""
   (generated)
   "chee-predicting-ans.blg"
   "chee-predicting-ans.bbl"
-["pdflatex"] 1540154343 "/Users/gwenchee/github/2018-chee-predicting-ans/docs/chee-predicting-ans.tex" "chee-predicting-ans.pdf" "chee-predicting-ans" 1540154345
+["pdflatex"] 1540180001 "/Users/gwenchee/github/2018-chee-predicting-ans/docs/chee-predicting-ans.tex" "chee-predicting-ans.pdf" "chee-predicting-ans" 1540180003
   "../figures/absolute_diff_2000.png" 1540147089 56238 78808f4f86d8b89b78bc74627ebcd52f ""
   "../figures/absolute_diff_all_33.png" 1540147089 59229 dae75fa3b1e8414ec38390b422639305 ""
   "../figures/absolute_diff_all_51.png" 1540147089 59011 89088f2003039c3c60c192cc1caeab4b ""
@@ -15,7 +15,7 @@
   "../figures/cumulative_mass_udb_cyclus.png" 1540147089 51742 41644198a1f5f736393afe66d54a1f47 ""
   "../figures/cumulative_mass_udb_cyclus_cycletime.png" 1540147089 82036 d2188cda52e50d325a6db260dcb88345 ""
   "../figures/cumulative_mass_udb_cyclus_refueltime.png" 1540147089 71853 b64cd5540c84a89cc74992eb777dcd47 ""
-  "/Users/gwenchee/github/2018-chee-predicting-ans/docs/chee-predicting-ans.tex" 1540154342 15989 eb7ac0dc6f0e9aa8e5381aa7d4b260ce ""
+  "/Users/gwenchee/github/2018-chee-predicting-ans/docs/chee-predicting-ans.tex" 1540179999 15989 eb7ac0dc6f0e9aa8e5381aa7d4b260ce ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1480098696 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
@@ -152,14 +152,14 @@
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
   "acros.tex" 1540147049 10104 89ad3f3e963cc96c89619fed401839fc ""
   "anstrans.cls" 1540147049 5516 0634053dc333a8772fc206b2ecd2a67b ""
-  "chee-predicting-ans.aux" 1540154345 4300 0889a9ed5368dc3cfeb37843532997ea ""
-  "chee-predicting-ans.bbl" 1540154343 4759 c30f5889c1c1b5fa535f56b9fe2f2e74 "bibtex chee-predicting-ans"
-  "chee-predicting-ans.tex" 1540154342 15989 eb7ac0dc6f0e9aa8e5381aa7d4b260ce ""
+  "chee-predicting-ans.aux" 1540180003 4300 0889a9ed5368dc3cfeb37843532997ea ""
+  "chee-predicting-ans.bbl" 1540180001 4759 c30f5889c1c1b5fa535f56b9fe2f2e74 "bibtex chee-predicting-ans"
+  "chee-predicting-ans.tex" 1540179999 15989 eb7ac0dc6f0e9aa8e5381aa7d4b260ce ""
   (generated)
-  "chee-predicting-ans.pdf"
   "acros.aux"
-  "chee-predicting-ans.ist"
   "chee-predicting-ans.glo"
   "chee-predicting-ans.acn"
-  "chee-predicting-ans.aux"
   "chee-predicting-ans.log"
+  "chee-predicting-ans.ist"
+  "chee-predicting-ans.aux"
+  "chee-predicting-ans.pdf"
