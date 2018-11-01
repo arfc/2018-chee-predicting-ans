@@ -1,11 +1,11 @@
-manuscript = chee-predicting-ans
+manuscript = arfc-pres
 references = $(wildcard *.bib)
-latexopt   = -halt-on-error -file-line-error
+latexopt   = -halt-on-error -file-line-error -shell-escape
 
 all: all-via-pdf
 
 all-via-pdf: $(manuscript).tex $(references)
-	pdflatex $(manuscript).tex --shell-escape
+	pdflatex $(latexopt) $<
 	bibtex $(manuscript).aux
 	pdflatex $(latexopt) $<
 	pdflatex $(latexopt) $<
@@ -24,7 +24,7 @@ epub:
 	ebook-convert $(manuscript).html $(manuscript).epub
 
 clean:
-	rm -f *.pdf *.glo *.ist *.log *.dvi *.toc *.aux *.gz *.out *.log *.bbl *.blg *.log *.spl *~ *.spl *.zip *.acn *.glo *.ist *.epub
+	rm -f *.glo *.ist *.log *.gz *.dvi *.toc *.aux *.out *.log *.bbl *.blg *.log *.spl *~ *.spl *.zip *.acn *.glo *.ist *.epub *.fls *.fdb_latexmk *.nav *.snm *.vrb
 
 realclean: clean
 	rm -rf $(manuscript).dvi
